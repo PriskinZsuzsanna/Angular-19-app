@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+app-root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(94%, 1200px);
+  margin-inline: auto;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,17 @@
+<div class="seasons-page-container" [ngClass]="season() ? 'season-' + season()?.toLowerCase() : ''">
+  <div class="container">
+    <div class="season-selector-container">
+      <h1>Choose a season:</h1>
+      @defer(hydrate on hover) {
+        <nav>
+          <ul>
+            <li [ngClass]="{'active' : season() === 'Spring'}" (click)="onSeasonClick('Spring')">Spring</li>
+            <li [ngClass]="{'active' : season() === 'Summer'}"(click)="onSeasonClick('Summer')">Summer</li>
+            <li [ngClass]="{'active' : season() === 'Autumn'}"(click)="onSeasonClick('Autumn')">Autumn</li>
+            <li [ngClass]="{'active' : season() === 'Winter'}"(click)="onSeasonClick('Winter')">Winter</li>
+          </ul>
+        </nav>
+      }
+    </div>
+  </div>
+</div>

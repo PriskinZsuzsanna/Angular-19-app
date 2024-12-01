@@ -1,0 +1,60 @@
+:host {
+  display: block;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.seasons-page-container {
+  min-height: 100vh;
+  background-image: url('/assets/seasons.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.season-spring {background-image: url('/assets/spring.jpg')};
+  &.season-summer {background-image: url('/assets/summer.jpg')};
+  &.season-autumn {background-image: url('/assets/autumn.jpg')};
+  &.season-winter {background-image: url('/assets/winter.jpg')};
+
+  .season-selector-container {
+    width: min(100%, 700px);
+    margin-inline: auto;
+    padding: 1.5rem;
+    background-color: #ffffff2d;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 2px 4px #b6afaf2a;
+    border-radius: .5rem;
+    color: #1d1a1a;
+    text-align: center;
+  }
+
+  nav {
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+
+      li {
+        padding: .5rem 1rem;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        transition: .1s all ease-in;
+
+        &.active {
+          cursor: default;
+          background: #555;
+          color: white;
+          border-radius: .3rem;
+        }
+      }
+    }
+  }
+}
